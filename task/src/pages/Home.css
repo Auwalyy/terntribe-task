@@ -2,29 +2,29 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
 }
 
 .cards-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 20px;
-  padding: 40px 20px; 
-  background-color: #ffffff; 
-  border-top: 2px solid #ececec; 
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-top: 2px solid #ececec;
 }
 
 .card {
-  background-color: #ffffff; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px); 
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -40,19 +40,19 @@ body {
 
 .card-title {
   font-size: 1.5rem;
-  color: #2c3e50; 
+  color: #2c3e50;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .card-description {
   font-size: 1rem;
-  color: #7f8c8d; 
+  color: #7f8c8d;
   margin-bottom: 20px;
 }
 
 .card-button {
-  background-color: #3498db; 
+  background-color: #3498db;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -64,50 +64,59 @@ body {
 }
 
 .card-button:hover {
-  background-color: #2980b9; 
+  background-color: #2980b9;
   transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
   .cards-section {
-    padding: 20px 10px; 
-    gap: 15px; /* Adjusted gap for better spacing on smaller screens */
+    padding: 20px 15px;
+    gap: 15px; 
   }
 
   .card-title {
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
   }
 
   .card-description {
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
   }
 
   .card-button {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     padding: 8px 16px;
   }
 }
 
 @media (max-width: 480px) {
   .cards-section {
-    gap: 20px; /* Ensures clear space between cards */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 15px 10px; 
   }
 
   .card {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced box shadow for better visibility */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+    margin: 0 auto;
+    width: 90%; 
+  }
+
+  .card img {
+    height: 30vh; 
   }
 
   .card-title {
-    font-size: 1.2rem;  
+    font-size: 1.2rem;
   }
 
   .card-description {
-    font-size: 0.85rem;  
+    font-size: 0.85rem;
   }
 
   .card-button {
     font-size: 0.85rem;
-    padding: 6px 12px;
-    background-color: #2980b9; 
+    padding: 10px 15px;
+    background-color: #2980b9;
   }
 }
